@@ -6,7 +6,7 @@
 // lets us flexibly prepare the data and simplifies the template.
 
 // These are my frequent collaborators, so let's use some variables:
-const tej = "Tej Chajed";
+const mihika = "Mihika Prabhu";
 const joe = "Joseph Tassarotti";
 const frans = "Frans Kaashoek";
 const nickolai = "Nickolai Zeldovich";
@@ -15,7 +15,7 @@ const nickolai = "Nickolai Zeldovich";
 function authorList(authors) {
     var list = [];
     authors.forEach((name, i) => {
-        if (name == tej) {
+        if (name == mihika) {
             name = '<span class="self-author">' + name + "</span>";
         }
         if (i == authors.length - 1) {
@@ -31,18 +31,13 @@ module.exports = {
     publications: [{
             title: "GoJournal: a verified, concurrent, crash-safe journaling system",
             authors: authorList([
-                tej,
-                joe,
-                "Mark Theng",
-                "Ralf Jung",
-                frans,
-                nickolai,
+             mihika,
             ]),
             conference: "OSDI 2021",
         },
         {
             title: "Verifying concurrent, crash-safe systems with Perennial",
-            authors: authorList([tej, joe, frans, nickolai]),
+            authors: authorList( mihika, joe, frans, nickolai]),
             conference: "SOSP 2019",
         },
     ],
